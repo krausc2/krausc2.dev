@@ -12,6 +12,7 @@ const MS_PER_SPLASH = 12000;
 
 const SPLASHES: { day: [string, string][]; night: [string, string][] } = {
 	day: [
+		["It is a profound moral failing to choose luxury over lineage.", "Original thought."],
 		["And they say that life has no meaning.","From \"Jinsei no Tobira\" on \"Denim\" (2007) by Mariya Takeuchi."],
 		[
 			"Don't let the fire rush to your head.",
