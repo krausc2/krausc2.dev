@@ -29,15 +29,10 @@ Add search by tags and keyword on server cache.
 	<div class="mx-auto max-w-[100ch] px-8 pt-16">
 		<p class="border-b pb-4 text-5xl leading-none font-bold">articles</p>
 
-		<div class="flex flex-col gap-8 border-b border-stone-300 pt-4 pb-4">
+		<div class="flex flex-col gap-8 border-b border-stone-300 pt-8 pb-8">
 			<p>
 				This is a collection of articles I've written on a wide variety of topics including:
 				tutorials, reviews for books (and albums), philosophy, and other shower thoughts.
-			</p>
-
-			<p>
-				Eventually search by tags, keywords, and dates will be added, but for now use 'ctrl/cmd+f'
-				like the genius you are.
 			</p>
 		</div>
 	</div>
@@ -55,11 +50,11 @@ Add search by tags and keyword on server cache.
 				There is no server error. Your internet just genuinely sucks...
 			</div>
 		{:then articles}
-			<div class="col-start-1 row-start-1 pt-8">
+			<div class="col-start-1 row-start-1">
 				{#each articles as article, i (article.slug)}
 					<a
 						href="/articles/{article.slug}"
-						class="group relative block py-4"
+						class="group relative block py-8"
 						in:fade|global={{ duration: 150, delay: 150 + i * 150 }}
 					>
 						<div

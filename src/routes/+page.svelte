@@ -119,13 +119,13 @@
 	Title of section "Let's go back in time" or something like that.
 -->
 
-<section class="mx-auto flex w-full max-w-[100ch] flex-col gap-8 px-8 pt-32 pb-32 lg:block">
+<section class="mx-auto flex w-full max-w-[100ch] flex-col px-8 pt-16 pb-32 lg:block">
 	<div class="order-first">
-		<p class="lg:mb-8 border-b pb-4 text-5xl leading-none font-bold">about</p>
+		<p class="border-b pb-4 text-5xl leading-none font-bold">about</p>
 	</div>
 
 	<figure
-		class="mx-auto w-2/3 max-w-sm lg:float-right lg:mx-0 lg:mb-4 lg:ml-8 lg:w-2/5 lg:max-w-none"
+		class="mx-auto mb-8 w-2/3 max-w-sm lg:float-right lg:mx-0 lg:mb-4 lg:ml-8 lg:w-2/5 lg:max-w-none lg:pt-8"
 	>
 		<div
 			class="relative aspect-3/4 w-full overflow-hidden [&_picture]:relative [&_picture]:z-10 [&_picture]:block [&_picture]:size-full"
@@ -143,12 +143,12 @@
 		</div>
 	</figure>
 
-	<p class="-order-2 text-xl lg:mb-8">
+	<p class="-order-2 mb-8 pt-8 text-xl">
 		G'day, <span class="font text-custom-coral">I'm Curtis</span>, a Cyber Security Engineer in
 		Sydney, currently finishing my undergraduate studies at Macquarie University.
 	</p>
 
-	<p class="-order-1 lg:mb-8">
+	<p class="-order-1 mb-8">
 		My focus area for the past few years has been hybrid infrastructure (Defender, Sentinel, Entra
 		ID, Azure), IT operations, and cyber risk management. I'm <span
 			class="pointer-events-none font-mono text-custom-coral tabular-nums select-none"
@@ -157,12 +157,11 @@
 		technology, philosophy, and art.
 	</p>
 
-	<p class="lg:mb-8">
-		This isn't a dating profile though, so go read some <a
-			href="/articles"
-			class="font-mono text-custom-coral">articles</a
-		>, or otherwise feel free to reach out if you'd like to chat about tech, cyber security, or
-		anything in between:
+	<p class="lg:mb-4">
+		Feel free to read some read some <a href="/articles" class="font-mono text-custom-coral"
+			>articles</a
+		>, or otherwise reach out if you'd like to chat about tech, cyber security, or anything in
+		between:
 		<a href={emailHref} class="inline-flex items-center gap-1 font-mono text-custom-coral"
 			>{emailAddress}<External /></a
 		>.

@@ -21,13 +21,7 @@
 	<div class="mx-auto max-w-[100ch] px-8 pt-16">
 		<p class="border-b pb-4 text-5xl leading-none font-bold">projects</p>
 
-		<div class="flex flex-col gap-8 border-b border-stone-300 pt-4 pb-4">
-			<p>Building in public can be a daunting task, but it's also one of the best ways to learn.</p>
-			<!-- Use quote elsewhere: 
-			 	Most people chase comfort, but being comfortable means you are within you your edge; lean just past
-				your edge and you will perpetually grow. Don't lean too far though or you'll fall off the
-				edge...
-			-->
+		<div class="flex flex-col gap-8 border-b border-stone-300 pt-8 pb-8">
 			<p>
 				See something that's broken or just kinda sucks? Open an issue on <a
 					href="https://github.com/krausc2?tab=repositories"
@@ -51,7 +45,7 @@
 				There is no server error. Your internet just genuinely sucks...
 			</div>
 		{:then projects}
-			<div class="col-start-1 row-start-1 pt-8">
+			<div class="col-start-1 row-start-1">
 				{#each projects as project, i (project.slug)}
 					<a
 						href="/projects/{project.slug}"
