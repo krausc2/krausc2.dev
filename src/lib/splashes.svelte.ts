@@ -172,6 +172,10 @@ const SPLASHES: { day: [string, string][]; night: [string, string][] } = {
 	],
 	night: [
 		[
+			"How do you do what you love when you're sick in the brain?",
+			'From "deepfake" on "hypochondriac" (2022) by brakence.'
+		],
+		[
 			"I promise you it's alright, this all means we're still alive.",
 			'From "HeavenPiercingRounds" on "It\'s Your Life" (2026) by thayerperiod.'
 		],
