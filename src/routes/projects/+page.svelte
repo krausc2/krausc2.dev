@@ -61,7 +61,7 @@
 								class="aspect-3/2 w-full bg-stone-200 md:float-right md:mb-4 md:ml-6 md:w-1/2"
 							></div>
 
-							<p class="pt-4 text-2xl font-bold md:mb-4 md:pt-0 lg:text-base">{project.title}</p>
+							<p class="pt-4 text-2xl font-bold md:mb-4 md:pt-0">{project.title}</p>
 
 							<p class="text-base md:mb-4 md:text-sm">{project.description}</p>
 

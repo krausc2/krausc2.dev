@@ -15,7 +15,7 @@ export const projects: Project[] = [
 	},
 	{
 		slug: "blog-infrastructure",
-		title: "krausc2.dev (Infrastructure)",
+		title: "krausc2.dev (Infra)",
 		tags: ["Docker", "Cloudflare", "GitHub Actions", "Tailscale", "Alpine Linux"],
 		description:
 			"Self-hosted blog infrastructure. Runs on a headless ARM machine over residential Wi-Fi, pushing delivery to the edge for reduced latency/load on local resources."

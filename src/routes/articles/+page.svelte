@@ -61,7 +61,7 @@ Add search by tags and keyword on server cache.
 							class="pointer-events-none absolute inset-0 z-0 transform-gpu bg-linear-to-r from-white to-stone-100 opacity-0 transition-opacity duration-700 group-hover:opacity-100 group-hover:duration-200"
 						></div>
 						<div class="relative z-10 mx-auto max-w-[70ch] px-8">
-							<p class="font-bold">{article.title}</p>
+							<p class="text-xl font-bold">{article.title}</p>
 							<div class="flex flex-col md:flex-row md:items-baseline md:justify-between">
 								<p class="text-sm">
 									{formatDate(article.date)}
