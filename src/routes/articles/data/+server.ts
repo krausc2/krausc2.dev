@@ -1,6 +1,7 @@
 import { json } from "@sveltejs/kit";
 import * as path from "node:path";
 import type { RequestHandler } from "./$types";
+import type { ReadingTime } from "$lib/readingTime";
 
 // Define Article interface with optional fields
 export interface Article {
@@ -9,6 +10,7 @@ export interface Article {
 	date?: string;
 	lastModified?: string;
 	tag?: string;
+	readingTime?: ReadingTime;
 }
 
 const imports = import.meta.glob("$lib/articles/*.md", { eager: true });
@@ -23,7 +25,8 @@ const articleCache: Article[] = Object.entries(imports).map(([filepath, module])
 		title: meta.title || "UNDEFINED",
 		date: (meta.date || "UNDEFINED").slice(0, 10),
 		lastModified: (meta.lastModified || meta.date || "UNDEFINED").slice(0, 10),
-		tag: meta.tag || "UNDEFINED"
+		tag: meta.tag || "UNDEFINED",
+		readingTime: meta.readingTime
 	};
 });
 

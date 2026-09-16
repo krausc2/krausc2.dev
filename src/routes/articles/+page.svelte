@@ -20,6 +20,7 @@ Add search by tags and keyword on server cache.
 <script lang="ts">
 	import { fade } from "svelte/transition";
 	import { formatDate } from "$lib/utils";
+	import ReadingTime from "$lib/components/ui/ReadingTime.svelte";
 	import type { PageData } from "./$types";
 
 	let { data }: { data: PageData } = $props();
@@ -37,7 +38,6 @@ Add search by tags and keyword on server cache.
 		</div>
 	</div>
 
-	<!-- #TODO Add read time estimates: "• 5 min read" -->
 	<!-- #TODO Add search function -->
 	<!-- #TODO Add tag pill buttons -->
 	<!-- #TODO Colours for each tag based on vibes -->
@@ -63,7 +63,10 @@ Add search by tags and keyword on server cache.
 						<div class="relative z-10 mx-auto max-w-[100ch] px-8">
 							<p class="text-xl font-bold">{article.title}</p>
 							<div class="flex flex-col md:flex-row md:items-baseline md:justify-between">
-								<p class="text-sm">Date created: {formatDate(article.date)}</p>
+								<p class="text-sm">
+									{formatDate(article.date)}
+									<ReadingTime readingTime={article.readingTime} />
+								</p>
 								<p class="font-mono text-sm text-custom-coral">#{article.tag}</p>
 							</div>
 						</div>
