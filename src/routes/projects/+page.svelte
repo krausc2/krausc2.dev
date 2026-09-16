@@ -58,7 +58,7 @@
 						></div>
 						<div class="relative z-10 mx-auto flex max-w-[70ch] flex-col gap-4 px-8 pt-4 md:block">
 							<div
-								class="aspect-3/2 w-full bg-stone-200 md:float-right md:mb-4 md:ml-8 md:w-1/2"
+								class="aspect-3/2 w-full bg-stone-200 md:float-right md:mb-4 md:ml-4 md:w-1/2"
 							></div>
 
 							<p class="pt-4 text-2xl font-bold md:mb-4 md:pt-0 lg:text-base">{project.title}</p>
