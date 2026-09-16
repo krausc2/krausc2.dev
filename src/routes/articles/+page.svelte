@@ -30,7 +30,7 @@ Add search by tags and keyword on server cache.
 	<div class="mx-auto max-w-[100ch] px-8 pt-16">
 		<p class="border-b pb-4 text-5xl leading-none font-bold">articles</p>
 
-		<div class="flex flex-col gap-8 border-b border-stone-300 pt-8 pb-8">
+		<div class="mb-8 flex flex-col gap-8 border-b border-stone-300 pt-8 pb-8">
 			<p>
 				This is a collection of articles I've written on a wide variety of topics including:
 				tutorials, reviews for books (and albums), philosophy, and other shower thoughts.
@@ -60,8 +60,8 @@ Add search by tags and keyword on server cache.
 						<div
 							class="pointer-events-none absolute inset-0 z-0 transform-gpu bg-linear-to-r from-white to-stone-100 opacity-0 transition-opacity duration-700 group-hover:opacity-100 group-hover:duration-200"
 						></div>
-						<div class="relative z-10 mx-auto max-w-[100ch] px-8">
-							<p class="text-xl font-bold">{article.title}</p>
+						<div class="relative z-10 mx-auto max-w-[70ch] px-8">
+							<p class="font-bold">{article.title}</p>
 							<div class="flex flex-col md:flex-row md:items-baseline md:justify-between">
 								<p class="text-sm">
 									{formatDate(article.date)}

@@ -21,7 +21,7 @@
 	<div class="mx-auto max-w-[100ch] px-8 pt-16">
 		<p class="border-b pb-4 text-5xl leading-none font-bold">projects</p>
 
-		<div class="flex flex-col gap-8 border-b border-stone-300 pt-8 pb-8">
+		<div class="mb-8 flex flex-col gap-8 border-b border-stone-300 pt-8 pb-8">
 			<p>
 				See something that's broken or just kinda sucks? Open an issue on <a
 					href="https://github.com/krausc2?tab=repositories"
@@ -56,12 +56,12 @@
 						<div
 							class="pointer-events-none absolute inset-0 z-0 transform-gpu bg-linear-to-r from-white to-stone-100 opacity-0 transition-opacity duration-700 group-hover:opacity-100 group-hover:duration-200"
 						></div>
-						<div class="relative z-10 mx-auto flex max-w-[100ch] flex-col gap-4 px-8 pt-4 md:block">
+						<div class="relative z-10 mx-auto flex max-w-[70ch] flex-col gap-4 px-8 pt-4 md:block">
 							<div
 								class="aspect-3/2 w-full bg-stone-200 md:float-right md:mb-4 md:ml-8 md:w-1/2"
 							></div>
 
-							<p class="pt-4 text-xl font-bold md:mb-4 md:pt-0">{project.title}</p>
+							<p class="pt-4 text-2xl font-bold md:mb-4 md:pt-0 lg:text-base">{project.title}</p>
 
 							<p class="text-base md:mb-4 md:text-sm">{project.description}</p>
 
