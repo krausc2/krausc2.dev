@@ -4,6 +4,7 @@
 	import { env } from "$env/dynamic/public";
 	import External from "$lib/components/ui/svg-icons/External.svelte";
 	import ProjectTag from "$lib/components/ui/ProjectTag.svelte";
+	import Throbber from "$lib/components/ui/Throbber.svelte";
 	import type { PageData } from "./$types";
 
 	let { data }: { data: PageData } = $props();
@@ -39,10 +40,10 @@
 	<div class="grid">
 		{#await data.streamed.projects}
 			<div
-				class="col-start-1 row-start-1 mx-auto max-w-[100ch] animate-pulse px-8 pt-12"
+				class="col-start-1 row-start-1 mx-auto max-w-[100ch] px-8 pt-12"
 				out:fade={{ duration: 150 }}
 			>
-				There is no server error. Your internet just genuinely sucks...
+				<Throbber />
 			</div>
 		{:then projects}
 			<div class="col-start-1 row-start-1">

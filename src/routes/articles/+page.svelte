@@ -21,6 +21,7 @@ Add search by tags and keyword on server cache.
 	import { fade } from "svelte/transition";
 	import { formatDate } from "$lib/utils";
 	import ReadingTime from "$lib/components/ui/ReadingTime.svelte";
+	import Throbber from "$lib/components/ui/Throbber.svelte";
 	import type { PageData } from "./$types";
 
 	let { data }: { data: PageData } = $props();
@@ -44,10 +45,10 @@ Add search by tags and keyword on server cache.
 	<div class="grid">
 		{#await data.streamed.articles}
 			<div
-				class="col-start-1 row-start-1 mx-auto max-w-[100ch] animate-pulse px-8 pt-12"
+				class="col-start-1 row-start-1 mx-auto max-w-[100ch] px-8 pt-12"
 				out:fade={{ duration: 150 }}
 			>
-				There is no server error. Your internet just genuinely sucks...
+				<Throbber />
 			</div>
 		{:then articles}
 			<div class="col-start-1 row-start-1">
