@@ -12,6 +12,10 @@ const MS_PER_SPLASH = 12000;
 
 const SPLASHES: { day: [string, string][]; night: [string, string][] } = {
 	day: [
+		[
+			"Throw off the bowlines. Sail away from the safe harbor. Catch the trade winds in your sails.",
+			'From "Minecraft" (2011) by Mojang Studios.'
+		],
 		["It is a profound moral failing to choose luxury over lineage.", "Original thought."],
 		[
 			"And they say that life has no meaning.",
@@ -171,6 +175,10 @@ const SPLASHES: { day: [string, string][]; night: [string, string][] } = {
 		["To understand recursion, one must first understand recursion.", "Standard cliche."]
 	],
 	night: [
+		[
+			"And then the rain patters on the sliding glass doors, and it will have been enough.",
+			"Original thought."
+		],
 		[
 			"How do you do what you love when you're sick in the brain?",
 			'From "deepfake" on "hypochondriac" (2022) by brakence.'
