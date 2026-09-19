@@ -136,8 +136,8 @@
 									<!-- <LinkedIn class="text-stone-900" /> -->
 									<!-- <GitHub class="text-stone-900" /> -->
 									<p>
-										📍 Currently in Sydney ({clock.hours}<span class="blink">:</span>{clock.minutes}
-										{clock.emoji})
+										📍 Currently in Sydney ( {clock.hours}<span class="blink">:</span>{clock.minutes}
+										{clock.emoji} )
 									</p>
 									<p class="pt-8 text-center font-mono">
 										© {new Date().getFullYear()} krausc2
