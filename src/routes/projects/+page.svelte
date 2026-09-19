@@ -6,11 +6,27 @@
 	import ProjectTag from "$lib/components/ui/ProjectTag.svelte";
 	import Throbber from "$lib/components/ui/Throbber.svelte";
 	import type { PageData } from "./$types";
+	import type { Project } from "./data/projects";
 
 	let { data }: { data: PageData } = $props();
 
 	let emailAddress = $state("[EMAIL PROTECTED]");
 	let emailHref = $state("");
+
+	let loadedProjects = $derived(
+		data.streamed.projects.then(async (projects: Project[]) => {
+			await Promise.all(
+				projects.map(async (p) => {
+					if (p.video) {
+						const res = await fetch(p.video);
+						const blob = await res.blob();
+						p.video = URL.createObjectURL(blob);
+					}
+				})
+			);
+			return projects;
+		})
+	);
 
 	onMount(() => {
 		emailAddress = env.PUBLIC_EMAIL;
@@ -38,7 +54,7 @@
 	</div>
 
 	<div class="grid">
-		{#await data.streamed.projects}
+		{#await loadedProjects}
 			<div
 				class="col-start-1 row-start-1 mx-auto max-w-[100ch] px-8 pt-12"
 				out:fade={{ duration: 150 }}
@@ -59,9 +75,20 @@
 						></div>
 						<div class="px-8">
 							<div class="relative z-10 mx-auto flex max-w-[70ch] flex-col gap-4 pt-4 md:block">
-								<div
-									class="aspect-3/2 w-full bg-stone-200 md:float-right md:mb-4 md:ml-6 md:w-1/2"
-								></div>
+								{#if project.video}
+									<video
+										class="transform-gpu border aspect-video w-full object-cover md:float-right md:mb-4 md:ml-6 md:w-1/2"
+										src={project.video}
+										autoplay
+										loop
+										muted
+										playsinline
+									></video>
+								{:else}
+									<div
+										class="aspect-video border w-full bg-stone-100 md:float-right md:mb-4 md:ml-6 md:w-1/2"
+									></div>
+								{/if}
 
 								<p class="pt-4 text-2xl font-bold md:mb-4 md:pt-0">{project.title}</p>
 

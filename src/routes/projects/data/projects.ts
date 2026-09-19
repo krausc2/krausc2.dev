@@ -1,23 +1,20 @@
+import krausc2 from "$lib/assets/krausc2-dev.mp4";
+
 export interface Project {
 	slug: string;
 	title: string;
 	tags: string[];
 	description: string;
+	video?: string;
 }
 
 export const projects: Project[] = [
 	{
-		slug: "blog-site",
-		title: "krausc2.dev (Site)",
-		tags: ["TypeScript", "Svelte"],
-		description:
-			"Lightweight blog frontend designed to run on self-hosted infrastructure, with a variety of optimisations such as sveltejs/enhanced-img and minimal external dependencies."
-	},
-	{
 		slug: "blog-infrastructure",
-		title: "krausc2.dev (Infra)",
-		tags: ["Docker", "Cloudflare", "GitHub Actions", "Tailscale", "Alpine Linux"],
+		title: "krausc2.dev",
+		tags: ["Svelte", "Docker", "Cloudflare", "GitHub Actions"],
 		description:
-			"Self-hosted blog infrastructure. Runs on a headless ARM machine over residential Wi-Fi, pushing delivery to the edge for reduced latency/load on local resources."
+			"Self-hosted blog infrastructure. Runs on a headless ARM machine over residential Wi-Fi, pushing delivery to the edge for reduced latency/load on local resources.",
+		video: krausc2
 	}
 ];
