@@ -12,6 +12,8 @@ const MS_PER_SPLASH = 12000;
 
 const SPLASHES: { day: [string, string][]; night: [string, string][] } = {
 	day: [
+		["To kill a dream, one must only speak of it.", "Original thought."],
+		["You only need enough delusion to start.", "Original thought."],
 		[
 			"Throw off the bowlines. Sail away from the safe harbor. Catch the trade winds in your sails.",
 			'From "Minecraft" (2011) by Mojang Studios.'
@@ -25,7 +27,6 @@ const SPLASHES: { day: [string, string][]; night: [string, string][] } = {
 			"Don't let the fire rush to your head.",
 			'From "Eye in the Sky" on "Eye in the Sky" (1982) by The Alan Parsons Project.'
 		],
-		["Any computer is a laptop if you're strong enough.", "Standard cliche."],
 		[
 			"Clippy just wanted to help.",
 			'From "Change your profile picture to clippy. I\'m serious." (2025) by Louis Rossmann.'
@@ -55,7 +56,6 @@ const SPLASHES: { day: [string, string][]; night: [string, string][] } = {
 			"Don't dream of things that will make reality even more terrible to you.",
 			'From "The Count of Monte Cristo" (1844) by Alexandre Dumas.'
 		],
-		["You finished it, and that's all that matters.", "Original thought."],
 		["Made with Svelte ♥", "Original thought."],
 		[
 			"An idiot admires complexity. A genius admires simplicity.",
@@ -71,10 +71,6 @@ const SPLASHES: { day: [string, string][]; night: [string, string][] } = {
 		],
 		["AI is a statistical mirror; It is the ultimate conformist.", "Original thought."],
 		["3000? All my homies use 5173.", "Default port for React vs Svelte; original thought."],
-		[
-			"Real things are messy and living.",
-			"Create in the open and embrace imperfection; original thought."
-		],
 		["Don't touch the CSS, it's still wet.", "Standard cliche."],
 		[
 			"Is it better for a man to have chosen evil than to have good imposed upon him?",
@@ -87,10 +83,6 @@ const SPLASHES: { day: [string, string][]; night: [string, string][] } = {
 		[
 			"It is not enough to be industrious; so are the ants.",
 			"Quote (1857) by Henry David Thoreau."
-		],
-		[
-			"Be the tree, whose shade you shall never live to sit in.",
-			"Unknown origin; variation of standard cliche."
 		],
 		[
 			"You will regret your inactions the most.",
@@ -106,7 +98,6 @@ const SPLASHES: { day: [string, string][]; night: [string, string][] } = {
 			"Reach for the stars, so if you fall, you land on a cloud.",
 			'From "Homecoming" on "Graduation" (2007) by Kanye West.'
 		],
-		["A wolf goes hungry sometimes, but it answers to no one.", "Standard cliche."],
 		[
 			"Sometimes we have to engage with things that we don’t like.",
 			"Very few people are actually open minded; original thought."
@@ -195,7 +186,6 @@ const SPLASHES: { day: [string, string][]; night: [string, string][] } = {
 			"I'm just a child, I lost track of time.",
 			'From "just a child" on "Strung Out Symphony" (2025) by aldn.'
 		],
-		["The best code is written at 2am.", "Original thought."],
 		[
 			"No one is more stressed than a 20y/o who thinks they're out of time.",
 			"Literally; original thought."
@@ -203,10 +193,6 @@ const SPLASHES: { day: [string, string][]; night: [string, string][] } = {
 		[
 			"It's later than you think, therefore hasten to do the work of God.",
 			"Quote (2025) by John Maus."
-		],
-		[
-			"Never run down the clock.",
-			"As opposed to the sporting concept of running down the clock;  original thought."
 		],
 		[
 			"Tyranny exercised for the good of its victims may be the most oppressive.",
