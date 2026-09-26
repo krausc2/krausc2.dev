@@ -143,12 +143,12 @@
 		</div>
 	</figure>
 
-	<p class="-order-2 mb-8 pt-8 text-xl">
+	<p class="-order-2 mb-8 pt-8 text-left text-xl">
 		G'day, <span class="font text-custom-coral">I'm Curtis</span>, a Cyber Security Engineer in
 		Sydney, currently finishing my undergraduate studies at Macquarie University.
 	</p>
 
-	<p class="-order-1 mb-8">
+	<p class="-order-1 mb-8 text-left">
 		My focus area for the past few years has been hybrid infrastructure (Defender, Sentinel, Entra
 		ID, Azure), IT operations, and cyber risk management. I'm <span
 			class="pointer-events-none font-mono text-custom-coral tabular-nums select-none"
@@ -157,7 +157,7 @@
 		technology, philosophy, and art.
 	</p>
 
-	<p class="lg:mb-4">
+	<p class="text-left lg:mb-4">
 		Feel free to read some read some <a href="/articles" class="font-mono text-custom-coral"
 			>articles</a
 		>, or otherwise reach out if you'd like to chat about tech, cyber security, or anything in
