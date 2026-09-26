@@ -77,7 +77,7 @@
 							<div class="relative z-10 mx-auto flex max-w-[70ch] flex-col gap-4 pt-4 md:block">
 								{#if project.video}
 									<video
-										class="transform-gpu border aspect-video w-full object-cover md:float-right md:mb-4 md:ml-6 md:w-1/2"
+										class="aspect-video w-full transform-gpu border object-cover md:float-right md:mb-4 md:ml-6 md:w-1/2"
 										src={project.video}
 										autoplay
 										loop
@@ -86,7 +86,7 @@
 									></video>
 								{:else}
 									<div
-										class="aspect-video border w-full bg-stone-100 md:float-right md:mb-4 md:ml-6 md:w-1/2"
+										class="aspect-video w-full border bg-stone-100 md:float-right md:mb-4 md:ml-6 md:w-1/2"
 									></div>
 								{/if}
 
