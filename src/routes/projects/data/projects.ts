@@ -14,7 +14,7 @@ export const projects: Project[] = [
 		title: "krausc2.dev",
 		tags: ["Svelte", "Docker", "Cloudflare", "GitHub Actions"],
 		description:
-			"Self-hosted blog infrastructure. Runs on a headless ARM machine over residential Wi-Fi, pushing delivery to the edge for reduced latency/load on local resources.",
+			"Self-hosted blog infrastructure. Deployed to a headless ARM machine over residential Wi-Fi, pushing delivery to the edge for reduced load on resources.",
 		video: krausc2
 	}
 ];

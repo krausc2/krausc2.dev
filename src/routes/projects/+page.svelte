@@ -92,7 +92,7 @@
 
 								<p class="pt-4 text-2xl font-bold md:mb-4 md:pt-0">{project.title}</p>
 
-								<p class="text-base md:mb-4 md:text-sm">{project.description}</p>
+								<p class="text-left text-base md:mb-4 md:text-sm">{project.description}</p>
 
 								<div class="flex flex-wrap gap-4 pt-2 pb-4 md:clear-both">
 									{#each project.tags as tag (tag)}
