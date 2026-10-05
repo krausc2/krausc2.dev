@@ -2,13 +2,13 @@
 	import type { Component } from "svelte";
 
 	// Icon imports
-	import SvelteIcon from "$lib/components/ui/svg-icons/Svelte.svelte";
-	import TypeScriptIcon from "$lib/components/ui/svg-icons/TypeScript.svelte";
-	import CloudflareIcon from "$lib/components/ui/svg-icons/Cloudflare.svelte";
-	import DockerIcon from "$lib/components/ui/svg-icons/Docker.svelte";
-	import GitHubIcon from "$lib/components/ui/svg-icons/GitHub.svelte";
-	import TailscaleIcon from "$lib/components/ui/svg-icons/Tailscale.svelte";
-	import AlpineIcon from "$lib/components/ui/svg-icons/Linux.svelte";
+	import SvelteIcon from "#lib/components/ui/svg-icons/Svelte.svelte";
+	import TypeScriptIcon from "#lib/components/ui/svg-icons/TypeScript.svelte";
+	import CloudflareIcon from "#lib/components/ui/svg-icons/Cloudflare.svelte";
+	import DockerIcon from "#lib/components/ui/svg-icons/Docker.svelte";
+	import GitHubIcon from "#lib/components/ui/svg-icons/GitHub.svelte";
+	import TailscaleIcon from "#lib/components/ui/svg-icons/Tailscale.svelte";
+	import AlpineIcon from "#lib/components/ui/svg-icons/Linux.svelte";
 
 	let { tag } = $props<{ tag: string }>();
 

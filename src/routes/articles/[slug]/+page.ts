@@ -3,7 +3,7 @@ import type { Article } from "../data/+server";
 
 export async function load({ params }) {
 	try {
-		const article = await import(`$lib/articles/${params.slug}.md`);
+		const article = await import(`#lib/articles/${params.slug}.md`);
 		const meta = (article.metadata as Partial<Article>) || {};
 
 		return {

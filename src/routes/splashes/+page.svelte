@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { SPLASHES_DATA } from "$lib/splashes.svelte";
+	import { SPLASHES_DATA } from "#lib/splashes.svelte.js";
 
 	const daySplashes = [...SPLASHES_DATA.day].sort((a, b) => a[0].localeCompare(b[0]));
 	const nightSplashes = [...SPLASHES_DATA.night].sort((a, b) => a[0].localeCompare(b[0]));

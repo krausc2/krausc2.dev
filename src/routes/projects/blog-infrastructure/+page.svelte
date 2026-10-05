@@ -1,5 +1,5 @@
 <script lang="ts">
-	import BackButton from "$lib/components/ui/BackButton.svelte";
+	import BackButton from "#lib/components/ui/BackButton.svelte";
 </script>
 
 <div class="relative">

@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type { ReadingTime as ReadingTimeType } from "$lib/readingTime";
+	import type { ReadingTime as ReadingTimeType } from "#lib/readingTime.js";
 
 	let { readingTime } = $props<{
 		readingTime?: ReadingTimeType;

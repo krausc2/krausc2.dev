@@ -1,4 +1,4 @@
-import krausc2 from "$lib/assets/krausc2-dev.mp4";
+import krausc2 from "#lib/assets/krausc2-dev.mp4";
 
 export interface Project {
 	slug: string;

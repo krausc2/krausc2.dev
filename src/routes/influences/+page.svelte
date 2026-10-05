@@ -19,7 +19,7 @@
 		</p>
 		<p>
 			If you want to read about how to create your own influences page, you can find out more in <a
-				href="$lib/articles/influences"
+				href="#lib/articles/influences"
 				class="text-custom-coral hover:underline">this article</a
 			>.
 		</p>

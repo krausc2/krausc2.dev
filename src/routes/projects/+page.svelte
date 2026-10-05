@@ -1,10 +1,10 @@
 <script lang="ts">
 	import { onMount } from "svelte";
 	import { fade } from "svelte/transition";
-	import { env } from "$env/dynamic/public";
-	import External from "$lib/components/ui/svg-icons/External.svelte";
-	import ProjectTag from "$lib/components/ui/ProjectTag.svelte";
-	import Throbber from "$lib/components/ui/Throbber.svelte";
+	import { PUBLIC_EMAIL } from "$app/env/public";
+	import External from "#lib/components/ui/svg-icons/External.svelte";
+	import ProjectTag from "#lib/components/ui/ProjectTag.svelte";
+	import Throbber from "#lib/components/ui/Throbber.svelte";
 	import type { PageData } from "./$types";
 	import type { Project } from "./data/projects";
 
@@ -29,8 +29,8 @@
 	);
 
 	onMount(() => {
-		emailAddress = env.PUBLIC_EMAIL;
-		emailHref = `mailto:${env.PUBLIC_EMAIL}`;
+		emailAddress = PUBLIC_EMAIL;
+		emailHref = `mailto:${PUBLIC_EMAIL}`;
 	});
 </script>
 

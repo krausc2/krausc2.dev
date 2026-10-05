@@ -11,7 +11,7 @@ Add search by tags and keyword on server cache.
 
 * let articleCache = null;
 * ...
-* const imports = import.meta.glob("$lib/articles/*.md");
+* const imports = import.meta.glob("#lib/articles/*.md");
 * ... sort articles etc
 * articleCache = loadedArticles;
 * return articleCache;
@@ -19,9 +19,9 @@ Add search by tags and keyword on server cache.
 
 <script lang="ts">
 	import { fade } from "svelte/transition";
-	import { formatDate } from "$lib/utils";
-	import ReadingTime from "$lib/components/ui/ReadingTime.svelte";
-	import Throbber from "$lib/components/ui/Throbber.svelte";
+	import { formatDate } from "#lib/utils.js";
+	import ReadingTime from "#lib/components/ui/ReadingTime.svelte";
+	import Throbber from "#lib/components/ui/Throbber.svelte";
 	import type { PageData } from "./$types";
 
 	let { data }: { data: PageData } = $props();

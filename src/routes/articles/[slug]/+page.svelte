@@ -1,7 +1,7 @@
 <script lang="ts">
-	import { formatDate } from "$lib/utils";
-	import BackButton from "$lib/components/ui/BackButton.svelte";
-	import ReadingTime from "$lib/components/ui/ReadingTime.svelte";
+	import { formatDate } from "#lib/utils.js";
+	import BackButton from "#lib/components/ui/BackButton.svelte";
+	import ReadingTime from "#lib/components/ui/ReadingTime.svelte";
 
 	let { data } = $props();
 </script>

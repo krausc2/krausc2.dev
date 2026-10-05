@@ -1,13 +1,13 @@
 <script lang="ts">
 	import "./layout.css";
-	import favicon from "$lib/assets/favicon.svg";
-	import { Button } from "$lib/components/ui/button";
-	import External from "$lib/components/ui/svg-icons/External.svelte";
-	//import LinkedIn from "$lib/components/ui/svg-icons/LinkedIn.svelte";
-	//import GitHub from "$lib/components/ui/svg-icons/GitHub.svelte";
+	import favicon from "#lib/assets/favicon.svg";
+	import { Button } from "#lib/components/ui/button/index.js";
+	import External from "#lib/components/ui/svg-icons/External.svelte";
+	//import LinkedIn from "#lib/components/ui/svg-icons/LinkedIn.svelte";
+	//import GitHub from "#lib/components/ui/svg-icons/GitHub.svelte";
 	import { page } from "$app/state";
 	import { fade } from "svelte/transition";
-	import { createClock } from "$lib/clock.svelte";
+	import { createClock } from "#lib/clock.svelte.js";
 	import pkg from "../../package.json";
 	import type { LayoutData } from "./$types";
 	import type { Snippet } from "svelte";

@@ -1,14 +1,14 @@
 <script lang="ts">
 	import { onMount } from "svelte";
 	import { slide, fade } from "svelte/transition";
-	import { createSplash } from "$lib/splashes.svelte";
-	import { createScramble } from "$lib/scramble.svelte";
-	import { createAgeCounter } from "$lib/age.svelte";
-	import { env } from "$env/dynamic/public";
-	import BinaryCanvas from "$lib/BinaryCanvas.svelte";
-	import External from "$lib/components/ui/svg-icons/External.svelte";
-	import MoreInfo from "$lib/components/ui/svg-icons/MoreInfo.svelte";
-	import childhoodPhoto from "$lib/assets/childhood_photo.jpg?enhanced";
+	import { createSplash } from "#lib/splashes.svelte.js";
+	import { createScramble } from "#lib/scramble.svelte.js";
+	import { createAgeCounter } from "#lib/age.svelte.js";
+	import { PUBLIC_EMAIL } from "$app/env/public";
+	import BinaryCanvas from "#lib/BinaryCanvas.svelte";
+	import External from "#lib/components/ui/svg-icons/External.svelte";
+	import MoreInfo from "#lib/components/ui/svg-icons/MoreInfo.svelte";
+	import childhoodPhoto from "#lib/assets/childhood_photo.jpg?enhanced";
 
 	let emailAddress = $state("[EMAIL PROTECTED]");
 	let emailHref = $state("");
@@ -20,11 +20,12 @@
 	let terminalHeight = $state(0);
 	// Odd numbers just feel ugly
 	let evenWidth = $derived(terminalWidth - (terminalWidth % 2));
+
 	let evenHeight = $derived(terminalHeight - (terminalHeight % 2));
 
 	onMount(() => {
-		emailAddress = env.PUBLIC_EMAIL;
-		emailHref = `mailto:${env.PUBLIC_EMAIL}`;
+		emailAddress = PUBLIC_EMAIL;
+		emailHref = `mailto:${PUBLIC_EMAIL}`;
 		splashReady = true;
 
 		// photo = <img> (dev) or <picture> (prod)
@@ -45,6 +46,7 @@
 
 <section class="relative flex min-h-screen flex-col border-t border-b">
 	<BinaryCanvas />
+
 	<div class="bg-hero-gradient pointer-events-none absolute inset-0 -z-10" aria-hidden="true"></div>
 
 	<div class="mx-auto flex w-full max-w-[120ch] flex-1 flex-col justify-center px-8">
@@ -139,7 +141,7 @@
 				class="size-full object-cover transition-opacity duration-700 {photoLoaded
 					? 'opacity-100'
 					: 'opacity-0'}"
-			/>
+			></enhanced:img>
 		</div>
 	</figure>
 
