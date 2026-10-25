@@ -136,6 +136,10 @@ const SPLASHES: { day: [string, string][]; night: [string, string][] } = {
 			'From "Mirror" on "Nurture" (2021) by Porter Robinson.'
 		],
 		[
+			"Raindrops are falling on my head.",
+			"From 'Raindrops Keep Fallin' on My Head' (1969) by B. J. Thomas."
+		],
+		[
 			"The pursuit of excellence needs no explanation.",
 			"Only at the end of an age will others understand your drive; original thought."
 		],
