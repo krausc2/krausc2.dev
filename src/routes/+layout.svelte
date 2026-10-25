@@ -29,11 +29,11 @@
 
 	/* #TODO Add console.log easter egg here */
 	const navItems = $derived([
-		{ label: "Home", href: "/" },
+		{ label: "home", href: "/" },
 		// { label: 'Now', href: '/now' },
-		{ label: "Articles", href: "/articles", count: data.counts.articles },
+		{ label: "articles", href: "/articles", count: data.counts.articles },
 		// { label: "Influences", href: "/influences" },
-		{ label: "Projects", href: "/projects", count: data.counts.projects }
+		{ label: "projects", href: "/projects", count: data.counts.projects }
 	]);
 
 	const clock = createClock();
