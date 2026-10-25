@@ -1,7 +1,6 @@
 ---
-title: This is a test article
+title: this is a test article
 date: 2026-03-02
-lastModified: 2026-07-01
 tag: article
 ---
 
