@@ -151,7 +151,16 @@
 	}
 
 	/* Article formatting */
+	.article-body {
+		@apply max-w-full min-w-0;
+	}
 	.article-body > * {
 		@apply pb-8;
+	}
+	.article-body pre {
+		@apply max-w-full wrap-break-word whitespace-pre-wrap;
+	}
+	.article-body code {
+		@apply wrap-break-word;
 	}
 }

@@ -12,7 +12,7 @@
 </div>
 
 <article class="flex flex-col border-t">
-	<div class="mx-auto w-full max-w-[70ch]">
+	<div class="mx-auto w-full max-w-[70ch] min-w-0">
 		<p class="pt-16 text-left text-2xl font-bold">{data.meta.title}</p>
 
 		<p class="pb-8 text-sm">
