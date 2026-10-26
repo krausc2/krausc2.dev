@@ -167,7 +167,7 @@
 		@apply block pb-8;
 	}
 	.article-body img {
-		@apply mx-auto block h-auto max-h-[50vh] w-auto max-w-full object-contain pb-8;
+		@apply mx-auto block h-auto w-full max-w-md pb-8;
 	}
 	.article-body picture img {
 		@apply pb-0;
