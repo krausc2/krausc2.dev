@@ -1,9 +1,25 @@
 <script lang="ts">
+	import { mount } from "svelte";
 	import { formatDate } from "#lib/utils.js";
 	import BackButton from "#lib/components/ui/BackButton.svelte";
 	import ReadingTime from "#lib/components/ui/ReadingTime.svelte";
+	import External from "#lib/components/ui/svg-icons/External.svelte";
 
 	let { data } = $props();
+
+	function externalLinks(node: HTMLElement) {
+		node.querySelectorAll("a").forEach((link) => {
+			if (
+				link.hostname !== window.location.hostname ||
+				link.getAttribute("href")?.startsWith("http")
+			) {
+				link.target = "_blank";
+				link.rel = "noopener noreferrer";
+				link.classList.add("inline-flex", "items-center", "gap-1");
+				mount(External, { target: link });
+			}
+		});
+	}
 </script>
 
 <div class="relative">
@@ -20,7 +36,7 @@
 			<ReadingTime readingTime={data.meta.readingTime} />
 		</p>
 
-		<div class="article-body pb-24">
+		<div class="article-body pb-24" use:externalLinks>
 			<data.content />
 		</div>
 	</div>
