@@ -20,7 +20,7 @@
 			<ReadingTime readingTime={data.meta.readingTime} />
 		</p>
 
-		<div class="article-body">
+		<div class="article-body pb-24">
 			<data.content />
 		</div>
 	</div>
