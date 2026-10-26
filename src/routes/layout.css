@@ -163,4 +163,13 @@
 	.article-body code {
 		@apply wrap-break-word;
 	}
+	.article-body picture {
+		@apply block pb-8;
+	}
+	.article-body img {
+		@apply mx-auto block h-auto max-h-[50vh] w-auto max-w-full object-contain pb-8;
+	}
+	.article-body picture img {
+		@apply pb-0;
+	}
 }
