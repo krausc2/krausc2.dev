@@ -124,6 +124,16 @@
 	body {
 		@apply bg-background text-stone-900;
 	}
+
+	/* Scrollbar styling */
+	/* This is ugly as helly so make a nice custom component one day */
+	main {
+		scrollbar-color: var(--border) transparent;
+	}
+	main::-webkit-scrollbar-track {
+		background: transparent;
+	}
+	
 	p a,
 	li a {
 		@apply text-custom-coral underline-offset-3 transition-colors duration-700;

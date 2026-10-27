@@ -84,7 +84,7 @@
 	<!-- Main Content -->
 	<main
 		bind:this={mainElement}
-		class="relative col-span-1 flex h-full flex-col overflow-y-auto md:col-span-2 lg:col-span-3"
+		class="relative col-span-1 flex h-full flex-col overflow-y-scroll md:col-span-2 lg:col-span-3"
 	>
 		{#if isMobileMenuOpen}
 			<div
