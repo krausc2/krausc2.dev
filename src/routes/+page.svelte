@@ -76,7 +76,7 @@
 						>
 							<!-- Ghost element to set dynamic height based on longest quote -->
 							<div
-								class="pointer-events-none invisible col-start-1 row-start-1 flex items-start justify-between gap-4 text-sm font-light"
+								class="pointer-events-none invisible col-start-1 row-start-1 flex items-start justify-between gap-4 font-light"
 								aria-hidden="true"
 							>
 								<div>
@@ -86,7 +86,7 @@
 							</div>
 							<!-- Visible splash text -->
 							<div
-								class="col-start-1 row-start-1 flex items-start justify-between gap-4 font-light text-stone-100/90 text-sm{!splashReady
+								class="col-start-1 row-start-1 flex items-start justify-between gap-4 font-light text-stone-100/90{!splashReady
 									? 'animate-pulse'
 									: ''}"
 							>
