@@ -63,7 +63,7 @@ Add search by tags and keyword on server cache.
 						></div>
 						<div class="px-8">
 							<div class="relative z-10 mx-auto max-w-[70ch]">
-								<p class="text-xl font-bold">{article.title}</p>
+								<p class="text-2xl font-bold">{article.title}</p>
 								<div class="flex flex-col md:flex-row md:items-baseline md:justify-between">
 									<p class="text-sm">
 										{formatDate(article.date)}

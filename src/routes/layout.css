@@ -181,10 +181,10 @@
 	}
 	/* Headings */
 	.article-body h2 {
-		@apply text-xl font-bold;
+		@apply text-2xl font-bold;
 	}
 	.article-body h3 {
-		@apply text-lg font-bold;
+		@apply text-xl font-bold;
 	}
 	/* Inline code */
 	.article-body :not(pre) > code {
@@ -192,7 +192,7 @@
 	}
 	/* Code blocks */
 	.article-body pre {
-		@apply bg-stone-900 text-stone-100/90 p-8 mb-8 font-mono text-sm max-w-full wrap-break-word whitespace-pre-wrap;
+		@apply bg-stone-900 text-stone-100/90 px-8 py-12 mb-8 font-mono text-sm max-w-full wrap-break-word whitespace-pre-wrap;
 		font-weight: 200;
 	}
 	/* Blockquotes */
