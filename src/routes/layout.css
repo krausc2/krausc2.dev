@@ -192,11 +192,11 @@
 	}
 	/* Code blocks */
 	.article-body pre {
-		@apply bg-stone-900 text-stone-100/90 px-8 py-12 mb-8 font-mono text-sm max-w-full wrap-break-word whitespace-pre-wrap;
+		@apply mb-8 max-w-full bg-stone-900 px-8 py-12 font-mono text-sm wrap-break-word whitespace-pre-wrap text-stone-100/90;
 		font-weight: 200;
 	}
 	/* Blockquotes */
 	.article-body blockquote {
-		@apply px-8 py-2 border-stone-300 italic mb-8 border-l;
+		@apply mb-8 border-l border-stone-300 px-8 py-2 italic;
 	}
 }
