@@ -72,11 +72,11 @@
 						<div
 							bind:clientWidth={terminalWidth}
 							bind:clientHeight={terminalHeight}
-							class="hidden bg-stone-900 px-6 py-6 font-mono text-custom-coral md:grid"
+							class="hidden bg-stone-900 px-8 py-6 font-mono md:grid"
 						>
 							<!-- Ghost element to set dynamic height based on longest quote -->
 							<div
-								class="pointer-events-none invisible col-start-1 row-start-1 flex items-start justify-between gap-4"
+								class="pointer-events-none invisible col-start-1 row-start-1 flex items-start justify-between gap-4 font-light text-sm"
 								aria-hidden="true"
 							>
 								<div>
@@ -86,13 +86,13 @@
 							</div>
 							<!-- Visible splash text -->
 							<div
-								class="col-start-1 row-start-1 flex items-start justify-between gap-4 text-custom-coral{!splashReady
+								class="col-start-1 row-start-1 flex items-start justify-between gap-4 text-stone-100/90 font-light text-sm{!splashReady
 									? 'animate-pulse'
 									: ''}"
 							>
 								<div>
 									<!-- #TODO Investigate layout shift/flicker on line break (quote over 1 line in length) -->
-									motd@system ~ # {splash.value}{#if splashReady}<span class="cursor">|</span>{/if}
+									<span class="text-custom-coral">motd@system ~ # </span> {splash.value}{#if splashReady}<span class="cursor">|</span>{/if}
 								</div>
 								<div class="flex h-6 shrink-0 items-center">
 									<a
