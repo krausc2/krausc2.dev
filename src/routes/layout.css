@@ -133,7 +133,7 @@
 	main::-webkit-scrollbar-track {
 		background: transparent;
 	}
-	
+
 	p a,
 	li a {
 		@apply text-custom-coral underline-offset-3 transition-colors duration-700;
@@ -167,9 +167,6 @@
 	.article-body > * {
 		@apply pb-8;
 	}
-	.article-body pre {
-		@apply max-w-full wrap-break-word whitespace-pre-wrap;
-	}
 	.article-body code {
 		@apply wrap-break-word;
 	}
@@ -181,5 +178,25 @@
 	}
 	.article-body picture img {
 		@apply pb-0;
+	}
+	/* Headings */
+	.article-body h2 {
+		@apply text-xl font-bold;
+	}
+	.article-body h3 {
+		@apply text-lg font-bold;
+	}
+	/* Inline code */
+	.article-body :not(pre) > code {
+		@apply bg-stone-200 px-1.5 py-0.5 font-mono text-sm;
+	}
+	/* Code blocks */
+	.article-body pre {
+		@apply bg-stone-900 text-stone-100/90 p-8 mb-8 font-mono text-sm max-w-full wrap-break-word whitespace-pre-wrap;
+		font-weight: 200;
+	}
+	/* Blockquotes */
+	.article-body blockquote {
+		@apply px-8 py-2 border-stone-300 italic mb-8 border-l;
 	}
 }
