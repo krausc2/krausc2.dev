@@ -76,7 +76,7 @@
 						>
 							<!-- Ghost element to set dynamic height based on longest quote -->
 							<div
-								class="pointer-events-none invisible col-start-1 row-start-1 flex items-start justify-between gap-4 font-light"
+								class="pointer-events-none invisible col-start-1 row-start-1 flex items-start justify-between gap-4"
 								aria-hidden="true"
 							>
 								<div>
@@ -86,13 +86,13 @@
 							</div>
 							<!-- Visible splash text -->
 							<div
-								class="col-start-1 row-start-1 flex items-start justify-between gap-4 font-light text-stone-100/90{!splashReady
+								class="col-start-1 row-start-1 flex items-start justify-between gap-4 text-custom-coral{!splashReady
 									? 'animate-pulse'
 									: ''}"
 							>
 								<div>
 									<!-- #TODO Investigate layout shift/flicker on line break (quote over 1 line in length) -->
-									<span class="text-custom-coral">motd@system ~ # </span>
+									motd@system ~ #
 									{splash.value}{#if splashReady}<span class="cursor">|</span>{/if}
 								</div>
 								<div class="flex h-6 shrink-0 items-center">

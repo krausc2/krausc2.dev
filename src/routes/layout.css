@@ -192,8 +192,7 @@
 	}
 	/* Code blocks */
 	.article-body pre {
-		@apply mb-8 max-w-full bg-stone-900 px-8 py-12 font-mono text-sm wrap-break-word whitespace-pre-wrap text-stone-100/90;
-		font-weight: 200;
+		@apply mb-8 max-w-full bg-stone-200 px-8 py-12 font-mono text-sm wrap-break-word whitespace-pre-wrap;
 	}
 	/* Blockquotes */
 	.article-body blockquote {
