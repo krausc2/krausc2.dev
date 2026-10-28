@@ -18,7 +18,6 @@ const SPLASHES: { day: [string, string][]; night: [string, string][] } = {
 			"Throw off the bowlines. Sail away from the safe harbor. Catch the trade winds in your sails.",
 			'From "Minecraft" (2011) by Mojang Studios.'
 		],
-		["It is a profound moral failing to choose luxury over lineage.", "Original thought."],
 		[
 			"And they say that life has no meaning.",
 			'From "Jinsei no Tobira" on "Denim" (2007) by Mariya Takeuchi.'
@@ -222,7 +221,6 @@ const SPLASHES: { day: [string, string][]; night: [string, string][] } = {
 			"As if I'm ever gonna change.",
 			'From "as if" on "i care so much that i don\'t care at all" (2023) by Glavie.'
 		],
-		["You're gonna die either way, so hurry up.", "Positive nihilism; original thought."],
 		["8 hours of sleep is recommended for optimal performance.", "Standard cliche."],
 		["The glowies are asleep.", "Standard cliche."],
 		[
