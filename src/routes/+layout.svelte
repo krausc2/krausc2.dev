@@ -76,7 +76,7 @@
 	</nav>
 {/snippet}
 
-<div class="grid h-screen grid-cols-1 overflow-hidden fade-in md:grid-cols-3 lg:grid-cols-5">
+<div class="grid h-dvh grid-cols-1 overflow-hidden fade-in md:grid-cols-3 lg:grid-cols-5">
 	<aside class="col-span-1 hidden flex-col justify-center border-r md:flex">
 		{@render navMenu()}
 	</aside>
@@ -84,7 +84,7 @@
 	<!-- Main Content -->
 	<main
 		bind:this={mainElement}
-		class="relative col-span-1 flex h-full flex-col overflow-y-scroll md:col-span-2 lg:col-span-3"
+		class="relative col-span-1 flex h-full flex-col overflow-y-scroll overscroll-y-contain md:col-span-2 lg:col-span-3"
 	>
 		{#if isMobileMenuOpen}
 			<div

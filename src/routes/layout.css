@@ -121,6 +121,11 @@
 	* {
 		@apply border-border outline-ring/50;
 	}
+	html,
+	body {
+		@apply overflow-hidden;
+		overscroll-behavior: none;
+	}
 	body {
 		@apply bg-background text-stone-900;
 	}

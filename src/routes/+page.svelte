@@ -44,7 +44,7 @@
 
 <!-- #TODO Fix layout issues where elements draw outside their bounds on small window sizes -->
 
-<section class="relative flex min-h-screen flex-col border-t border-b">
+<section class="relative flex min-h-dvh flex-col border-t border-b">
 	<BinaryCanvas />
 
 	<div class="bg-hero-gradient pointer-events-none absolute inset-0 -z-10" aria-hidden="true"></div>
