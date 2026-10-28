@@ -176,7 +176,7 @@ If you have an open mind and an hour to spare, it's definitely worth picking apa
 
 ### 2. Death Stranding (Series)
 
-Death Stranding is an open-world story game created by the much-acclaimed Hideo Kojima. It sets you on a journey as a courier across the continental United States (and later Australia) following a cataclysmic event that leaves the nation shattered into remote cities and outposts.
+[Death Stranding](https://www.kojimaproductions.jp/en/death-stranding-dc) is an open-world story game created by the much-acclaimed Hideo Kojima. It sets you on a journey as a courier across the continental United States (and later Australia) following a cataclysmic event that leaves the nation shattered into remote cities and outposts.
 
 Death Stranding's UI is remarkably cold and sterile, which is quite fitting for a world that is equally cold and sterile.
 
@@ -189,7 +189,7 @@ What's interesting here is how something as mundane as a video game UI can be us
 
 ### 3. Two Fold Pt. 2 (Album)
 
-There exists a quote from an interlude on "Two Fold, Pt. 2" (2016) by Haywyre called "Restraint". It goes:
+There exists a quote from an interlude on ["Two Fold, Pt. 2" (2016) by Haywyre](https://www.haywyremusic.com/music/two-fold-pt-2/) called "Restraint". It goes:
 
 > "Absence is the absence of presence, but presence is the absence of absence."
 
@@ -204,7 +204,7 @@ What worked better was to write these ideas down as dispersed `#TODO` notes. The
 
 ### 4. crumpler.com
 
-So what happens when you put the concept of absence into practice? Well, you might end up with a site like Crumpler. It takes the concept to an extreme, almost like some kind of legacy Web 1.0 site (which is a really cool thing).
+So what happens when you put the concept of absence into practice? Well, you might end up with a site like [crumpler.com](<https://www.crumpler.com>). It takes the concept to an extreme, almost like some kind of legacy Web 1.0 site (which is a really cool thing).
 
 There isn't really any philosophical conviction here, the design is just genuinely interesting.
 
