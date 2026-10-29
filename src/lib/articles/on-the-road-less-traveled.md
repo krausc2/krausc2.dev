@@ -206,7 +206,7 @@ What worked better was to write these ideas down as dispersed `#TODO` notes. The
 
 So what happens when you put the concept of absence into practice? Well, you might end up with a site like [crumpler.com](<https://www.crumpler.com>). It takes the concept to an extreme, almost like some kind of legacy Web 1.0 site (which is a really cool thing).
 
-There isn't really any philosophical conviction here, the design is just genuinely interesting.
+There isn't really any philosophical conviction here, the design is just genuinely cool.
 
 <EnhancedImage
 	src={crumpler}
