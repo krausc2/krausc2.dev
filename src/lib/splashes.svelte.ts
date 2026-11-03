@@ -166,7 +166,9 @@ const SPLASHES: { day: [string, string][]; night: [string, string][] } = {
 			"What was once shocking occurs in the streets daily; original thought."
 		],
 		["Orwell was an optimist.", "Standard cliche."],
-		["To understand recursion, one must first understand recursion.", "Standard cliche."]
+		["To understand recursion, one must first understand recursion.", "Standard cliche."],
+		["'Cause we're not meant to get it right the first time.", "From \"Get This Right\" on \"Retrospective\" (2018) by Koven."],
+		["The real you will cease to exist", "From \"Episode 25: Do you love me?\" of \"Neon Genesis Evangelion\" (1995) by Hideaki Anno."]
 	],
 	night: [
 		[
