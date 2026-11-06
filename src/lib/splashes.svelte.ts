@@ -168,7 +168,8 @@ const SPLASHES: { day: [string, string][]; night: [string, string][] } = {
 		["Orwell was an optimist.", "Standard cliche."],
 		["To understand recursion, one must first understand recursion.", "Standard cliche."],
 		["'Cause we're not meant to get it right the first time.", "From \"Get This Right\" on \"Retrospective\" (2018) by Koven."],
-		["The real you will cease to exist", "From \"Episode 25: Do you love me?\" of \"Neon Genesis Evangelion\" (1995) by Hideaki Anno."]
+		["The real you will cease to exist", "From \"Episode 25: Do you love me?\" of \"Neon Genesis Evangelion\" (1995) by Hideaki Anno."],
+		["He's simply passing time without actually living his life.", "From \"Ikiru\" (1952) by Akira Kurosawa."]
 	],
 	night: [
 		[
