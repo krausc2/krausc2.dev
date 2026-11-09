@@ -75,7 +75,7 @@ While the characters did _appear_, this has to be one of the most unoptimised pi
 
 I had to dig deeper and pull out my inner Casey Muratori — optimise, optimise, optimise. What we needed to do was work _up_ to the language abstraction; by applying those basic C concepts we quickly understood where the performance issue was.
 
-This time, instead of forcing the browser to calculate each character from a font set and *then* painting it tens of thousands of times, we were simply going to build a huge printing press.
+This time, instead of forcing the browser to calculate each character from a font set and _then_ painting it tens of thousands of times, we were simply going to build a huge printing press.
 
 ```ts
 // This is pseudocode, check the site repo if you want the real script
@@ -103,7 +103,6 @@ function draw() {
 	for (let row = 0; row < rows; row++) {
 		// 6. Loop for every column (until the edge of the screen)
 		for (let col = 0; col < columns; col++) {
-
 			// 7. Randomly decide on using the 1 or 0 stamp
 			const isOne = Math.random() > 0.5;
 
@@ -204,7 +203,7 @@ What worked better was to write these ideas down as dispersed `#TODO` notes. The
 
 ### 4. crumpler.com
 
-So what happens when you put the concept of absence into practice? Well, you might end up with a site like [crumpler.com](<https://www.crumpler.com>). It takes the concept to an extreme, almost like some kind of legacy Web 1.0 site (which is a really cool thing).
+So what happens when you put the concept of absence into practice? Well, you might end up with a site like [crumpler.com](https://www.crumpler.com). It takes the concept to an extreme, almost like some kind of legacy Web 1.0 site (which is a really cool thing).
 
 There isn't really any philosophical conviction here, the design is just genuinely cool.
 
