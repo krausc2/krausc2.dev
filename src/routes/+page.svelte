@@ -5,6 +5,9 @@
 	import { createScramble } from "#lib/scramble.svelte.js";
 	import BinaryCanvas from "#lib/BinaryCanvas.svelte";
 	import MoreInfo from "#lib/components/ui/svg-icons/MoreInfo.svelte";
+	// Social Tags
+	import LinkedIn from "#lib/components/ui/svg-icons/LinkedIn.svelte";
+	import GitHub from "#lib/components/ui/svg-icons/GitHub.svelte";
 
 	let splashReady = $state(false);
 	let showTerminal = $state(true);
@@ -34,9 +37,32 @@
 
 	<div class="mx-auto flex w-full max-w-[120ch] flex-1 flex-col justify-center px-8">
 		<div class="relative">
-			<h1 class="block text-center text-[4rem] leading-none font-bold md:inline-flex md:text-left">
-				krausc2
-			</h1>
+			<div
+				class="flex flex-col items-center justify-center gap-4 md:flex-row md:items-baseline md:justify-start"
+			>
+				<h1 class="text-[4rem] leading-none font-bold">krausc2</h1>
+				<!-- Social Links -->
+				<div class="flex items-center gap-4">
+					<a
+						href="https://github.com/krausc2"
+						target="_blank"
+						rel="noreferrer"
+						aria-label="GitHub"
+						class="text-stone-900 transition-colors duration-700 hover:text-stone-500 hover:duration-200"
+					>
+						<GitHub />
+					</a>
+					<a
+						href="https://www.linkedin.com/in/curtiskraus/"
+						target="_blank"
+						rel="noreferrer"
+						aria-label="LinkedIn"
+						class="text-stone-900 transition-colors duration-700 hover:text-stone-500 hover:duration-200"
+					>
+						<LinkedIn />
+					</a>
+				</div>
+			</div>
 			{#if showTerminal}
 				<div out:slide={{ delay: 300, duration: 300 }}>
 					<div out:fade={{ duration: 300 }}>

@@ -3,8 +3,8 @@
 	import favicon from "#lib/assets/favicon.svg";
 	import { Button } from "#lib/components/ui/button/index.js";
 	import External from "#lib/components/ui/svg-icons/External.svelte";
-	//import LinkedIn from "#lib/components/ui/svg-icons/LinkedIn.svelte";
-	//import GitHub from "#lib/components/ui/svg-icons/GitHub.svelte";
+	import LinkedIn from "#lib/components/ui/svg-icons/LinkedIn.svelte";
+	import GitHub from "#lib/components/ui/svg-icons/GitHub.svelte";
 	import { page } from "$app/state";
 	import { fade } from "svelte/transition";
 	import { createClock } from "#lib/clock.svelte.js";
@@ -133,14 +133,37 @@
 							{#if page.url.pathname !== "/"}
 								<div class="mx-auto mt-auto w-full max-w-[100ch] px-8">
 									<footer class="border-t pt-4 pb-4 font-mono">
-										<!-- <LinkedIn class="text-stone-900" /> -->
-										<!-- <GitHub class="text-stone-900" /> -->
-										<p>
-											📍 Currently in Sydney ( {clock.hours}<span class="blink">:</span
-											>{clock.minutes}
-											{clock.emoji} )
-										</p>
-										<p class="pt-8 text-center font-mono">
+										<div
+											class="flex flex-col items-center justify-center gap-4 md:flex-row md:justify-between"
+										>
+											<p class="text-center md:text-left">
+												📍 Currently in Sydney ( {clock.hours}<span class="blink">:</span
+												>{clock.minutes}
+												{clock.emoji} )
+											</p>
+											<!-- Social Links -->
+											<div class="flex items-center gap-4 pt-2 md:pt-0">
+												<a
+													href="https://github.com/krausc2"
+													target="_blank"
+													rel="noreferrer"
+													aria-label="GitHub"
+													class="text-stone-900 transition-colors duration-700 hover:text-stone-500 hover:duration-200"
+												>
+													<GitHub size="24" />
+												</a>
+												<a
+													href="https://www.linkedin.com/in/curtiskraus/"
+													target="_blank"
+													rel="noreferrer"
+													aria-label="LinkedIn"
+													class="text-stone-900 transition-colors duration-700 hover:text-stone-500 hover:duration-200"
+												>
+													<LinkedIn size="24" />
+												</a>
+											</div>
+										</div>
+										<p class="pt-6 text-center font-mono md:pt-8">
 											© {new Date().getFullYear()} krausc2
 											<span class="hidden lg:inline">
 												| Source available at <a
