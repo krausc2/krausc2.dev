@@ -178,6 +178,10 @@ const SPLASHES: { day: [string, string][]; night: [string, string][] } = {
 		[
 			"He's simply passing time without actually living his life.",
 			'From "Ikiru" (1952) by Akira Kurosawa.'
+		],
+		[
+			"Said you wanna go see the world, but you're stuck at work.",
+			'From "Dream Sequence" on "♡" (2025) by Jane Remover.'
 		]
 	],
 	night: [
