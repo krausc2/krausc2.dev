@@ -14,22 +14,19 @@
 
 	let { data, children }: { data: LayoutData; children: Snippet } = $props();
 	let isMobileMenuOpen = $state(false);
-	let mainElement = $state<HTMLElement>();
 	let md = 768; // The cutoff for mobile view from tailwindcss.
 
 	$effect(() => {
-		// When url changes, close the mobile menu if it's open and scroll to top.
+		// When url changes, close the mobile menu if it's open.
 		if (page.url.pathname) {
 			isMobileMenuOpen = false;
-			setTimeout(() => {
-				mainElement?.scrollTo({ top: 0, behavior: "instant" });
-			}, 150); // Wait for page fade out
 		}
 	});
 
 	/* #TODO Add console.log easter egg here */
 	const navItems = $derived([
 		{ label: "home", href: "/" },
+		{ label: "about", href: "/about" },
 		// { label: 'Now', href: '/now' },
 		{ label: "articles", href: "/articles", count: data.counts.articles },
 		// { label: "Influences", href: "/influences" },
@@ -83,8 +80,7 @@
 
 	<!-- Main Content -->
 	<main
-		bind:this={mainElement}
-		class="relative col-span-1 flex h-full flex-col overflow-y-scroll overscroll-y-contain md:col-span-2 lg:col-span-3"
+		class="relative col-span-1 flex h-full flex-col overflow-hidden md:col-span-2 lg:col-span-3"
 	>
 		{#if isMobileMenuOpen}
 			<div
@@ -115,10 +111,13 @@
 					<span class="translate-y-[-1.5px]">☰</span>
 				</button>
 
-				<div class="grid flex-1">
+				<div class="grid min-h-0 flex-1">
 					{#key page.url.pathname}
 						<div
-							class="col-start-1 row-start-1 flex h-full flex-col"
+							class="scroll-container col-start-1 row-start-1 flex h-full min-h-0 flex-col {page.url
+								.pathname === '/'
+								? 'no-scrollbar overflow-y-hidden'
+								: 'overflow-y-scroll'} overscroll-y-contain"
 							in:fade={{ duration: 150, delay: 150 }}
 							out:fade={{ duration: 150 }}
 						>
@@ -131,28 +130,30 @@
 								</div>
 							{/if}
 
-							<div class="mx-auto mt-auto w-full max-w-[100ch] px-8">
-								<footer class="border-t pt-4 pb-4 font-mono">
-									<!-- <LinkedIn class="text-stone-900" /> -->
-									<!-- <GitHub class="text-stone-900" /> -->
-									<p>
-										📍 Currently in Sydney ( {clock.hours}<span class="blink">:</span
-										>{clock.minutes}
-										{clock.emoji} )
-									</p>
-									<p class="pt-8 text-center font-mono">
-										© {new Date().getFullYear()} krausc2
-										<span class="hidden lg:inline">
-											| Source available at <a
-												href="https://github.com/krausc2/krausc2.dev"
-												class="inline-flex items-center gap-1"
-												target="_blank">GitHub<External /></a
-											>
-											| v{pkg.version}
-										</span>
-									</p>
-								</footer>
-							</div>
+							{#if page.url.pathname !== "/"}
+								<div class="mx-auto mt-auto w-full max-w-[100ch] px-8">
+									<footer class="border-t pt-4 pb-4 font-mono">
+										<!-- <LinkedIn class="text-stone-900" /> -->
+										<!-- <GitHub class="text-stone-900" /> -->
+										<p>
+											📍 Currently in Sydney ( {clock.hours}<span class="blink">:</span
+											>{clock.minutes}
+											{clock.emoji} )
+										</p>
+										<p class="pt-8 text-center font-mono">
+											© {new Date().getFullYear()} krausc2
+											<span class="hidden lg:inline">
+												| Source available at <a
+													href="https://github.com/krausc2/krausc2.dev"
+													class="inline-flex items-center gap-1"
+													target="_blank">GitHub<External /></a
+												>
+												| v{pkg.version}
+											</span>
+										</p>
+									</footer>
+								</div>
+							{/if}
 						</div>
 					{/key}
 				</div>

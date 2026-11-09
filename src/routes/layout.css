@@ -132,11 +132,20 @@
 
 	/* Scrollbar styling */
 	/* This is ugly as helly so make a nice custom component one day */
-	main {
+	main,
+	.scroll-container {
 		scrollbar-color: var(--border) transparent;
 	}
-	main::-webkit-scrollbar-track {
+	main::-webkit-scrollbar-track,
+	.scroll-container::-webkit-scrollbar-track {
 		background: transparent;
+	}
+	.no-scrollbar {
+		scrollbar-width: none;
+		-ms-overflow-style: none;
+	}
+	.no-scrollbar::-webkit-scrollbar {
+		display: none;
 	}
 
 	p a,
