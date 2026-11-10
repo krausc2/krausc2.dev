@@ -247,7 +247,11 @@ const SPLASHES: { day: [string, string][]; night: [string, string][] } = {
 			"Inequality is required to motivate men to greatness.",
 			"Without the inequal, the exceptional would cease to exist; original thought."
 		],
-		["Were you expecting a dark mode?", "Original thought."]
+		["Were you expecting a dark mode?", "Original thought."],
+		[
+			"In a hollow night, I found holiness.",
+			'From "Snowing, all at once" on "Grip Your Fist, I\'m Heaven Bound" (2022) by Kingfisher/Racing Mount Pleasant.'
+		]
 	]
 };
 
