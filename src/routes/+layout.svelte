@@ -148,7 +148,7 @@
 													target="_blank"
 													rel="noreferrer"
 													aria-label="GitHub"
-													class="text-stone-900 transition-colors duration-700 hover:text-stone-500 hover:duration-200"
+													class="text-stone-600 transition-colors duration-700 hover:text-stone-900 hover:duration-200"
 												>
 													<GitHub size="24" />
 												</a>
@@ -157,7 +157,7 @@
 													target="_blank"
 													rel="noreferrer"
 													aria-label="LinkedIn"
-													class="text-stone-900 transition-colors duration-700 hover:text-stone-500 hover:duration-200"
+													class="text-stone-600 transition-colors duration-700 hover:text-stone-900 hover:duration-200"
 												>
 													<LinkedIn size="24" />
 												</a>

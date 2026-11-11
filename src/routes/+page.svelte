@@ -48,7 +48,7 @@
 						target="_blank"
 						rel="noreferrer"
 						aria-label="GitHub"
-						class="text-stone-900 transition-colors duration-700 hover:text-stone-500 hover:duration-200"
+						class="text-stone-600 transition-colors duration-700 hover:text-stone-900 hover:duration-200"
 					>
 						<GitHub />
 					</a>
@@ -57,7 +57,7 @@
 						target="_blank"
 						rel="noreferrer"
 						aria-label="LinkedIn"
-						class="text-stone-900 transition-colors duration-700 hover:text-stone-500 hover:duration-200"
+						class="text-stone-600 transition-colors duration-700 hover:text-stone-900 hover:duration-200"
 					>
 						<LinkedIn />
 					</a>
@@ -107,7 +107,7 @@
 								<div class="flex h-6 shrink-0 items-center">
 									<a
 										href="/splashes"
-										class="text-stone-500 transition-colors duration-700 hover:text-custom-coral hover:duration-200"
+										class="text-stone-600 transition-colors duration-700 hover:text-custom-coral hover:duration-200"
 									>
 										<MoreInfo />
 									</a>
