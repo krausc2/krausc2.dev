@@ -182,7 +182,8 @@ const SPLASHES: { day: [string, string][]; night: [string, string][] } = {
 		[
 			"Said you wanna go see the world, but you're stuck at work.",
 			'From "Dream Sequence" on "♡" (2025) by Jane Remover.'
-		]
+		],
+		["Oh my God, I need a little oxygen.", "From \"Making Time\" on \"Year Of The Snake\" (2026) by Nick Ward"]
 	],
 	night: [
 		[
