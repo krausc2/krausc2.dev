@@ -34,7 +34,7 @@
 	Title of section "Let's go back in time" or something like that.
 -->
 
-<section class="mx-auto flex w-full max-w-[100ch] flex-col lg:block">
+<section class="mx-auto flex w-full max-w-[100ch] flex-col pb-24 lg:block">
 	<div class="order-first">
 		<p class="border-b pb-4 text-5xl leading-none font-bold">about</p>
 	</div>
@@ -59,24 +59,23 @@
 	</figure>
 
 	<p class="-order-2 mb-8 pt-8 text-left text-xl">
-		G'day, <span class="font text-custom-coral">I'm Curtis</span>, a Cyber Security Engineer in
-		Sydney, currently finishing my undergraduate studies at Macquarie University.
+		G'day, <span class="font text-custom-coral">I'm Curtis</span>, a Cyber Security Engineer and
+		incoming postgraduate student at the University of New South Wales (UNSW).
 	</p>
 
 	<p class="-order-1 mb-8 text-left">
-		My focus area for the past few years has been hybrid infrastructure (Defender, Sentinel, Entra
-		ID, Azure), IT operations, and cyber risk management. I'm <span
+		I previously studied a Bachelor of Cyber Security (part-time) at Macquarie University. My focus
+		area for the past few years has been hybrid infrastructure (Defender, Sentinel, Entra ID,
+		Azure), IT operations, and cyber risk management. I'm <span
 			class="pointer-events-none font-mono text-custom-coral tabular-nums select-none"
 			>{age.value}</span
-		> years old, enjoy building software as a hobby, and have a strong interest in the intersection of
+		> years old, enjoy designing software as a hobby, and have a strong interest in the intersection of
 		technology, philosophy, and art.
 	</p>
 
 	<p class="text-left lg:mb-4">
-		Feel free to read some read some <a href="/articles" class="font-mono text-custom-coral"
-			>articles</a
-		>, or otherwise reach out if you'd like to chat about tech, cyber security, or anything in
-		between:
+		Feel free to read some <a href="/articles" class="font-mono text-custom-coral">articles</a>, or
+		otherwise reach out if you'd like to chat about tech, cyber security, or anything in between:
 		<a href={emailHref} class="inline-flex items-center gap-1 font-mono text-custom-coral"
 			>{emailAddress}<External /></a
 		>.
