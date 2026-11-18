@@ -24,8 +24,10 @@ jobs:
           # 2. Checkout the version tag that triggered this workflow
           git checkout ${{ github.ref_name }}
 
-          # 3. Inject tag version into package.json
-          npm version ${{ github.ref_name }} --no-git-tag-version --allow-same-version
+          # 3. Inject tag version into package.json (stripping leading 'v')
+          VERSION="${{ github.ref_name }}"
+          VERSION="${VERSION#v}"
+          sed -i '' "s/\"version\": \"[^\"]*\"/\"version\": \"$VERSION\"/" package.json
 
           # 4. Rebuild and restart Docker containers
           docker compose down
