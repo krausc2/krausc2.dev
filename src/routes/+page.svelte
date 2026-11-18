@@ -8,6 +8,7 @@
 	// Social Tags
 	import LinkedIn from "#lib/components/ui/svg-icons/LinkedIn.svelte";
 	import GitHub from "#lib/components/ui/svg-icons/GitHub.svelte";
+	import { newestArticle } from "./articles/data/articles.js";
 
 	let splashReady = $state(false);
 	let showTerminal = $state(true);
@@ -81,36 +82,47 @@
 						<div
 							bind:clientWidth={terminalWidth}
 							bind:clientHeight={terminalHeight}
-							class="hidden bg-stone-900 px-8 py-6 font-mono md:grid"
+							class="hidden bg-stone-900 px-8 pt-4 pb-6 font-mono md:flex md:flex-col md:gap-4"
 						>
-							<!-- Ghost element to set dynamic height based on longest quote -->
-							<div
-								class="pointer-events-none invisible col-start-1 row-start-1 flex items-start justify-between gap-4"
-								aria-hidden="true"
-							>
-								<div>
-									motd@system ~ # {splash.longestValue}<span class="cursor opacity-0">|</span>
+							<p class="text-left">
+								<a href="/articles/{newestArticle.slug}" class="align-middle underline-offset-5">
+									<span
+										class="mr-2 inline-block animate-pulse bg-blue-500 px-1.5 py-0.5 align-middle font-mono text-sm text-stone-900 no-underline"
+										>new article!</span
+									><span class="align-middle">{newestArticle.title}</span>
+								</a>
+							</p>
+
+							<div class="grid border-t border-stone-600 pt-4">
+								<!-- Ghost element to set dynamic height based on longest quote -->
+								<div
+									class="pointer-events-none invisible col-start-1 row-start-1 flex items-start justify-between gap-4"
+									aria-hidden="true"
+								>
+									<div>
+										motd@system ~ # {splash.longestValue}<span class="cursor opacity-0">|</span>
+									</div>
+									<div class="flex h-6 shrink-0 items-center"><MoreInfo /></div>
 								</div>
-								<div class="flex h-6 shrink-0 items-center"><MoreInfo /></div>
-							</div>
-							<!-- Visible splash text -->
-							<div
-								class="col-start-1 row-start-1 flex items-start justify-between gap-4 text-custom-coral{!splashReady
-									? 'animate-pulse'
-									: ''}"
-							>
-								<div>
-									<!-- #TODO Investigate layout shift/flicker on line break (quote over 1 line in length) -->
-									motd@system ~ #
-									{splash.value}{#if splashReady}<span class="cursor">|</span>{/if}
-								</div>
-								<div class="flex h-6 shrink-0 items-center">
-									<a
-										href="/splashes"
-										class="text-stone-600 transition-colors duration-700 hover:text-custom-coral hover:duration-200"
-									>
-										<MoreInfo />
-									</a>
+								<!-- Visible splash text -->
+								<div
+									class="col-start-1 row-start-1 flex items-start justify-between gap-4 text-custom-coral{!splashReady
+										? 'animate-pulse'
+										: ''}"
+								>
+									<div>
+										<!-- #TODO Investigate layout shift/flicker on line break (quote over 1 line in length) -->
+										motd@system ~ #
+										{splash.value}{#if splashReady}<span class="cursor">|</span>{/if}
+									</div>
+									<div class="flex h-6 shrink-0 items-center">
+										<a
+											href="/splashes"
+											class="text-stone-600 transition-colors duration-700 hover:text-custom-coral hover:duration-200"
+										>
+											<MoreInfo />
+										</a>
+									</div>
 								</div>
 							</div>
 						</div>

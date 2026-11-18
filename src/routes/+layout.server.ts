@@ -1,10 +1,9 @@
+import { articles } from "./articles/data/articles.js";
 import { projects } from "./projects/data/projects";
 import type { LayoutServerLoad } from "./$types";
 
-const articleFiles = import.meta.glob("#lib/articles/*.md");
-
 const counts = {
-	articles: Object.keys(articleFiles).length,
+	articles: articles.length,
 	projects: projects.length
 };
 

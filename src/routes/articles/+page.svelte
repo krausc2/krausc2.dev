@@ -69,7 +69,8 @@ Add search by tags and keyword on server cache.
 										{formatDate(article.date)}
 										<ReadingTime readingTime={article.readingTime} />
 									</p>
-									<p class="font-mono text-sm text-custom-coral">#{article.tag}</p>
+									<!-- #TODO Convert this into a colour based tags -->
+									<p class="font-mono text-sm text-blue-500">#{article.tag}</p>
 								</div>
 							</div>
 						</div>
