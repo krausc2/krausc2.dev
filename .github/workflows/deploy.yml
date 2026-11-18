@@ -17,12 +17,16 @@ jobs:
         run: |
           cd /Users/krausc2/Development/krausc2.dev
 
-          # 1. Fetch all tags from GitHub
+          # 1. Clean previous build changes and fetch tags
+          git reset --hard
           git fetch --all --tags
 
           # 2. Checkout the version tag that triggered this workflow
           git checkout ${{ github.ref_name }}
 
-          # 3. Rebuild and restart Docker containers
+          # 3. Inject tag version into package.json
+          npm version ${{ github.ref_name }} --no-git-tag-version --allow-same-version
+
+          # 4. Rebuild and restart Docker containers
           docker compose down
           docker compose up -d --build
