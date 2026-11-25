@@ -153,7 +153,7 @@ const SPLASHES: { day: [string, string][]; night: [string, string][] } = {
 		["Your smart fridge is spying on you.", "Okay but really, it is; standard cliche."],
 		[
 			"I'm not a big fan of the internet, that's why I went into cyber security.",
-			"Quote (2026) by Dr Helen Teixeria."
+			"Quote (2026) by Dr Helen Teixeira."
 		],
 		[
 			"LARP like your life depends on it.",
@@ -183,7 +183,10 @@ const SPLASHES: { day: [string, string][]; night: [string, string][] } = {
 			"Said you wanna go see the world, but you're stuck at work.",
 			'From "Dream Sequence" on "♡" (2025) by Jane Remover.'
 		],
-		["Oh my God, I need a little oxygen.", "From \"Making Time\" on \"Year Of The Snake\" (2026) by Nick Ward"]
+		[
+			"Oh my God, I need a little oxygen.",
+			'From "Making Time" on "Year Of The Snake" (2026) by Nick Ward'
+		]
 	],
 	night: [
 		[
@@ -252,6 +255,10 @@ const SPLASHES: { day: [string, string][]; night: [string, string][] } = {
 		[
 			"In a hollow night, I found holiness.",
 			'From "Snowing, all at once" on "Grip Your Fist, I\'m Heaven Bound" (2022) by Kingfisher/Racing Mount Pleasant.'
+		],
+		[
+			"Mankind will live to die another day",
+			'From "Lindsay Wagner" "in Death Stranding" (2019) by Hideo Kojima'
 		]
 	]
 };
